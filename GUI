@@ -1,0 +1,28 @@
+import javax.swing.*;
+
+public class GUI {
+	public static void main(String[] args) {
+		//JFrame j=new JFrame();
+		
+		//j.setTitle("Dialog");
+		
+		String fname;
+		String lname;
+		String fullname;
+		
+		fname=JOptionPane.showInputDialog(null,"Enter Your First Name", "Message", JOptionPane.ERROR_MESSAGE);
+		
+		lname=JOptionPane.showInputDialog(null,"Enter Your First Name", "Message", JOptionPane.ERROR_MESSAGE);
+		
+		fullname="Your Name is " +fname+ " " +lname;
+		
+		JOptionPane.showMessageDialog(null,fullname);
+		
+		/*int a=JOptionPane.showConfirmDialog(j,"Are you sure?");  
+		if(a==JOptionPane.YES_OPTION){
+			j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		}*/
+		
+		System.exit(0);
+	}
+}
